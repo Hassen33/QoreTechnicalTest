@@ -167,6 +167,5 @@ Everything is designed with **scalability, maintainability, and performance** in
 
 ## 📍 Author
 
-👨‍💻 **Your Name**  
-📧 Email: your.email@example.com  
+📧 Email: hassen.bejaoui.18@gmail.com
 🔗 [Portfolio](https://hassen.netlify.app/)
