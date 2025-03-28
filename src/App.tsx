@@ -1,4 +1,5 @@
 import "./App.css";
+import FeaturedOptionsSection from "./Components/FeaturedOptionsSection/FeaturedOptionsSection";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 
@@ -7,9 +8,9 @@ function App() {
     <>
       <Header />
       <Hero />
-      {/* <FeaturedOptionsSection />
-      <MembersStoriesSection />
-      <Footer /> */}
+      <FeaturedOptionsSection />
+      {/* <MembersStoriesSection /> */}
+      {/* <Footer /> */}
     </>
   );
 }

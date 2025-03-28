@@ -1,0 +1,73 @@
+/* =========================== */
+/*         Accordion           */
+/* =========================== */
+.accordionContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+}
+
+/* Header */
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+h3 {
+  font-size: 16px !important;
+  font-weight: 400;
+  color: #1c1812;
+}
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Content */
+.accordionContent {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.image {
+  width: 400px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.textContainer {
+  flex: 1;
+  width: 95%;
+}
+p.accordionDescription {
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  padding: 8px 0px;
+}
+
+.accordionButton {
+  background-color: var(--secondary-Button-bg-color);
+  color: var(--secondary-button-text-color);
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* =========================== */
+/*        Responsive CSS       */
+/* =========================== */
+@media (max-width: 1024px) {
+  .accordionContainer {
+    display: none;
+  }
+}

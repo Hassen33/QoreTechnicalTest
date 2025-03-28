@@ -16,7 +16,7 @@
 
   /* Buttons */
   --main-Button-bg-color: #514432;
-  --secondary-Button-bg-color: #65625e;
+  --secondary-Button-bg-color: #DFDEDD;
 
   --main-button-text-color: #f7f7f6;
   --secondary-button-text-color: #1c1812;
@@ -30,7 +30,7 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--main-background-color);
   color: var(--main-text-color);
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
 }

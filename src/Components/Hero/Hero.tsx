@@ -24,7 +24,7 @@ const Hero = () => {
             <br />
             Fly Fishing
           </h1>
-          <p>
+          <p className={styles.heroDescription}>
             At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis
             cursus vestibulum, facilisi ac, sed faucibus.
           </p>

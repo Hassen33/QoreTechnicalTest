@@ -1,0 +1,59 @@
+/* ============= */
+/*      Card     */
+/* ============= */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 24px 24px 8px 24px;
+  text-align: left;
+}
+
+p.description {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  padding: 8px 24px;
+  text-align: left;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-button-text-color);
+  background-color: var(--secondary-Button-bg-color);
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+  margin: 0px 0px 24px 24px;
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* =========================== */
+/*        Responsive CSS       */
+/* =========================== */
+@media (min-width: 1024px) {
+  .card {
+    display: none;
+  }
+}
