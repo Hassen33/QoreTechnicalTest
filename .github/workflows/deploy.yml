@@ -3,35 +3,27 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Runs when pushing to the 'main' branch
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+      - main  # Change if you're using a different branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3  # Fetch latest code from GitHub
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: 'npm'
+          node-version: '20'
 
-      - name: Install Dependencies
-        run: npm install  # Install all project dependencies
-
-      - name: Build Project
-        run: npm run build  # Generate the production build
+      - name: Build project
+        run: |
+          npm install
+          npm run build  # Ensure this creates a `dist` or `build` folder
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Deploy to gh-pages branch
-          folder: dist       # The folder that gets deployed
+          branch: gh-pages  # Ensure this matches your Pages settings
+          folder: dist  # Change to your actual build output folder
