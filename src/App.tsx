@@ -1,4 +1,5 @@
 import "./App.css";
+import Contact from "./Components/Contact/Contact";
 import FeaturedOptionsSection from "./Components/FeaturedOptionsSection/FeaturedOptionsSection";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <FeaturedOptionsSection />
       <MembersStoriesSection />
+      <Contact />
       <Footer />
     </>
   );

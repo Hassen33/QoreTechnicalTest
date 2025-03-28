@@ -7,11 +7,10 @@
   width: 100%;
   overflow: hidden;
 }
-.cardsContainer{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
-
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
 }
 h2.memberStoriesTitle {
   font-size: 48px;
@@ -23,6 +22,9 @@ h2.memberStoriesTitle {
 /*        Responsive CSS       */
 /* =========================== */
 @media (max-width: 1024px) {
+  .cardsContainer {
+    gap: 0px;
+  }
   h2.memberStoriesTitle {
     font-size: 40px;
     margin-bottom: 24px;
