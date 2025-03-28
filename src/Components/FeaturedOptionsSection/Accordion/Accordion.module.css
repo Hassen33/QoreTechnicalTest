@@ -1,10 +1,6 @@
 /* =========================== */
 /*         Accordion           */
 /* =========================== */
-.accordionContainer {
-  max-width: 1024px;
-  margin: 0 auto;
-}
 
 .accordionItem {
   border-bottom: 1px solid #ddd;
@@ -71,7 +67,7 @@ p.accordionDescription {
 /*        Responsive CSS       */
 /* =========================== */
 @media (max-width: 1024px) {
-  .accordionContainer {
+  .accordionItem {
     display: none;
   }
 }
