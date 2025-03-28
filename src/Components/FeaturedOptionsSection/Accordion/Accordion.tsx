@@ -25,9 +25,10 @@ const Accordion = ({
   description,
   image,
   index,
+  
 }: AccordionItemProps) => {
   /* ++++++++++ States ++++++++++ */
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   /* ++++++++++ Handlers ++++++++++ */
   const handleToggle = (index: number) => {
