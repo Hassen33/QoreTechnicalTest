@@ -83,4 +83,9 @@
   .contactContainer {
     padding: 20px 0px;
   }
+  /* Input Fields */
+  .formGroup input,
+  .formGroup textarea {
+    width: 95%;
+  }
 }
