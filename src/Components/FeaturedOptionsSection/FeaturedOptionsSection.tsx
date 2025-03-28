@@ -1,5 +1,11 @@
+import styles from "./FeaturedOptionsSection.module.css";
+
 const FeaturedOptionsSection = () => {
-  return <div>FeaturedOptionsSection</div>;
+  return (
+    <div className={styles.featuredOptionSectionContainer}>
+      FeaturedOptionsSection
+    </div>
+  );
 };
 
 export default FeaturedOptionsSection;
