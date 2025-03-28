@@ -24,6 +24,7 @@ export const featuredOptionsData = [
       "Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Tellus in metus vulputate eu sc",
     image: "./accordionImage.png",
     link: "/explore-fly-fishing",
+    bgImage: "./featureCard1Bg.png",
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ export const featuredOptionsData = [
       "Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Tellus in metus vulputate eu sc",
     image: "./accordionImage.png",
     link: "/fly-fishing-experiences",
+    bgImage: "./featureCard2Bg.png",
   },
   {
     id: 3,
@@ -40,5 +42,6 @@ export const featuredOptionsData = [
       "Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Tellus in metus vulputate eu sc",
     image: "./accordionImage.png",
     link: "/gear-up-and-catch-more",
+    bgImage: "./featureCard3Bg.png",
   },
 ];

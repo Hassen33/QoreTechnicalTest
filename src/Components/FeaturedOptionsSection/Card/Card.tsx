@@ -13,12 +13,20 @@ interface CardProps {
   title: string;
   description: string;
   link: string;
+  bgImage: string;
 }
 
 // Card component
-const Card = ({ title, description, link }: CardProps) => {
+const Card = ({ title, description, link, bgImage }: CardProps) => {
   return (
-    <div className={styles.card}>
+    <div
+      className={styles.card}
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{description}</p>
       <a href={link} className={styles.button}>
