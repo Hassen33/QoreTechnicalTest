@@ -2,6 +2,7 @@ import Container from "../Container/Container";
 import MemberStoriesCard from "./MembersSectionCard/MembersStoriesSectionCard";
 import styles from "./MembersStoriesSection.module.css";
 import { MemberstoriesCardData } from "./memberStoriesCardData";
+import MemberStoriesCardMobile from "./MemberStoriesSectionCardMobile/MemberStoriesSectionCardMobile";
 // import { MemberstoriesCardData } from "./MemberstoriesCardData";
 
 /**
@@ -15,7 +16,7 @@ const MembersStoriesSection = () => {
     <section className={styles.memberStoriesSectionContainer}>
       <Container>
         {/* Title */}
-        <h2 className={styles.memberStoriesTitle}>Featured options</h2>
+        <h2 className={styles.memberStoriesTitle}>Member stories</h2>
 
         {/* Accordions For Desktop*/}
         <div className={styles.cardsContainer}>
@@ -28,17 +29,18 @@ const MembersStoriesSection = () => {
               image={item.image}
             />
           ))}
-        </div>
 
-        {/* Cards For Mobile Devices  */}
-        {/* {MemberstoriesCardData.map((item) => (
-          <Card
-            key={item.id}
-            title={item.title}
-            description={item.description}
-            link={item.link}
-          />
-        ))} */}
+          {/* Cards For Mobile Devices  */}
+          {MemberstoriesCardData.map((item) => (
+            <MemberStoriesCardMobile
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+            />
+          ))}
+        </div>
       </Container>
     </section>
   );
