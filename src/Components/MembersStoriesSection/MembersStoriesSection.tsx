@@ -1,7 +1,7 @@
 import Container from "../Container/Container";
 import MemberStoriesCard from "./MembersSectionCard/MembersStoriesSectionCard";
 import styles from "./MembersStoriesSection.module.css";
-import { MemberstoriesCardData } from "./memberStoriesCardData";
+import { MemberstoriesCardData } from "../../Data/memberStoriesCardData";
 import MemberStoriesCardMobile from "./MemberStoriesSectionCardMobile/MemberStoriesSectionCardMobile";
 // import { MemberstoriesCardData } from "./MemberstoriesCardData";
 

@@ -1,7 +1,7 @@
 import Container from "../Container/Container";
 import Accordion from "./Accordion/Accordion";
 import Card from "./Card/Card";
-import { featuredOptionsData } from "./featuredOptionsData";
+import { featuredOptionsData } from "../../Data/featuredOptionsData";
 import styles from "./FeaturedOptionsSection.module.css";
 /**
  * Featured options Component
