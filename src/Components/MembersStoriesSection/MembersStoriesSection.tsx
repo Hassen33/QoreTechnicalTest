@@ -1,9 +1,5 @@
-import React from 'react'
-
 const MembersStoriesSection = () => {
-  return (
-    <div>MembersStoriesSection</div>
-  )
-}
+  return <div>MembersStoriesSection</div>;
+};
 
-export default MembersStoriesSection
+export default MembersStoriesSection;
