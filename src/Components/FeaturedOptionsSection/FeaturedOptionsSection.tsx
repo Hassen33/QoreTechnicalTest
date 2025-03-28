@@ -1,7 +1,7 @@
 import Container from "../Container/Container";
 import Accordion from "./Accordion/Accordion";
-import { accordionData } from "./accordionData";
 import Card from "./Card/Card";
+import { featuredOptionsData } from "./featuredOptionsData";
 import styles from "./FeaturedOptionsSection.module.css";
 /**
  * Featured options Component
@@ -17,10 +17,19 @@ const FeaturedOptionsSection = () => {
         <h2 className={styles.featuredOptionTitle}>Featured options</h2>
 
         {/* Accordions For Desktop*/}
-        <Accordion />
+        {featuredOptionsData.map((item, index) => (
+          <Accordion
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            index={index}
+          />
+        ))}
 
         {/* Cards For Mobile Devices  */}
-        {accordionData.map((item) => (
+        {featuredOptionsData.map((item) => (
           <Card
             key={item.id}
             title={item.title}

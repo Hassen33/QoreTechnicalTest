@@ -1,16 +1,31 @@
 import { useState } from "react";
 import styles from "./Accordion.module.css";
-import { accordionData } from "../accordionData";
 import { MdKeyboardArrowDown } from "react-icons/md";
 /**
  * Accordion Component
  * -------------------
- * + Renders an expandable accordion using data from accordionData.
+ * + Renders an expandable accordion using data from featuredOptionsData.
  * @returns {JSX.Element} Accordion component.
  * @example <Accordion />
  */
 
-const Accordion = () => {
+// ====================
+//      PropTypes
+// ====================
+interface AccordionItemProps {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  index: any;
+}
+const Accordion = ({
+  id,
+  title,
+  description,
+  image,
+  index,
+}: AccordionItemProps) => {
   /* ++++++++++ States ++++++++++ */
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -20,46 +35,44 @@ const Accordion = () => {
   };
 
   return (
-    <div className={styles.accordionContainer}>
-      {accordionData.map((item, index) => (
-        <div key={item.id} className={styles.accordionItem}>
-          {/*
+    <>
+      <div key={id} className={styles.accordionItem}>
+        {/*
         ================
         Accordion Header 
         ================
         */}
-          <div
-            className={styles.accordionHeader}
-            onClick={() => handleToggle(index)}
-          >
-            <h3>{item.title}</h3>
-            <MdKeyboardArrowDown
-              size={24}
-              className={`${styles.icon} ${
-                activeIndex === index ? styles.rotate : ""
-              }`}
-            />
-          </div>
+        <div
+          className={styles.accordionHeader}
+          onClick={() => handleToggle(index)}
+        >
+          <h3>{title}</h3>
+          <MdKeyboardArrowDown
+            size={24}
+            className={`${styles.icon} ${
+              activeIndex === index ? styles.rotate : ""
+            }`}
+          />
+        </div>
 
-          {/*
+        {/*
               =================
               Accordion Content 
               =================
               */}
-          {activeIndex === index && (
-            <div className={styles.accordionContent}>
-              <img src={item.image} alt={item.title} className={styles.image} />
+        {activeIndex === index && (
+          <div className={styles.accordionContent}>
+            <img src={image} alt={title} className={styles.image} />
 
-              <div className={styles.textContainer}>
-                <h4>{item.title}</h4>
-                <p className="accordionDescription">{item.description}</p>
-                <button className={styles.accordionButton}>Learn More</button>
-              </div>
+            <div className={styles.textContainer}>
+              <h4 className={styles.contentTitle}>{title}</h4>
+              <p className={styles.accordionDescription}>{description}</p>
+              <button className={styles.accordionButton}>Learn More</button>
             </div>
-          )}
-        </div>
-      ))}
-    </div>
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

@@ -49,6 +49,10 @@ h3 {
   flex: 1;
   width: 95%;
 }
+.contentTitle {
+  font-size: 32px;
+  font-weight: 600;
+}
 p.accordionDescription {
   color: var(--secondary-text-color);
   font-size: 20px;

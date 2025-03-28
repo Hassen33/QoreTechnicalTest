@@ -5,9 +5,9 @@
 
  * @example
  * // Used in a React component to generate accordion elements.
- * import { accordionData } from './accordionData';
+ * import { featuredOptionsData } from './featuredOptionsData';
  *
- * accordionData.map((item, index) => (
+ * featuredOptionsData.map((item, index) => (
  * <div key={item.id}>
  * <h2>{item.title}</h2>
  * <p>{item.description}</p>
@@ -16,7 +16,7 @@
  * ));
  */
 
-export const accordionData = [
+export const featuredOptionsData = [
   {
     id: 1,
     title: "Explore Fly Fishing",
