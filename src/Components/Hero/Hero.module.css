@@ -1,17 +1,104 @@
+/* =========================== */
+/*          Hero Section       */
+/* =========================== */
 .container {
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0 auto;
   width: 100%;
   border: 2px solid red;
 }
 
 .heroContainer {
-  border: 2px solid cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 136px;
+  gap: 24px;
 }
 
-/* ======= */
+/* Left Content */
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+  color: var(--main-text-color);
+  line-height: 112.5%;
+}
+
+p {
+  font-size: 20px;
+  color: var(--secondary-text-color);
+  margin: 16px 0;
+  line-height: 150%;
+}
+
+.button {
+  background-color: var(--main-Button-bg-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 111px;
+  height: 40px;
+  padding: 8px 11px;
+}
+
+/* Right Image */
+.imageWrapper {
+  flex-shrink: 0;
+}
+
+.image {
+  max-width: 400px;
+  height: 300px;
+}
+
+/* =========================== */
+/*        Responsive CSS       */
+/* =========================== */
+
 @media (max-width: 1024px) {
+  /* Containers */
   .container {
-    max-width: 100%;
+    max-width: 100vw !important;
+    overflow-x: hidden;
+  }
+  .heroContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 56px;
+    gap: 0px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 40px 5%;
+  }
+  /* Image */
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image {
+    min-width: 100vw;
+    min-height: 500px;
+  }
+  /* Text */
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--main-text-color);
+    line-height: 112.5%;
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+  .button {
   }
 }

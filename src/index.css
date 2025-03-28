@@ -1,3 +1,36 @@
-body{
-    font-family: "inter";
+/* =========================== */
+/*       Global Styles         */
+/* =========================== */
+/* ++++++++++ Fonts ++++++++++ */
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@400;700&display=swap");
+
+/* ++++++++++ Colors ++++++++++ */
+:root {
+  /* Backgrounds */
+  --main-background-color: #fcfcfb;
+  --secondary-background-color: #f1ece1;
+
+  /* Texts */
+  --main-text-color: #1c1812;
+  --secondary-text-color: #65625e;
+
+  /* Buttons */
+  --main-Button-bg-color: #514432;
+  --secondary-Button-bg-color: #65625e;
+
+  --main-button-text-color: #f7f7f6;
+  --secondary-button-text-color: #1c1812;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
