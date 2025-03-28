@@ -2,6 +2,7 @@ import "./App.css";
 import FeaturedOptionsSection from "./Components/FeaturedOptionsSection/FeaturedOptionsSection";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
+import MembersStoriesSection from "./Components/MembersStoriesSection/MembersStoriesSection";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <Hero />
       <FeaturedOptionsSection />
-      {/* <MembersStoriesSection /> */}
+      <MembersStoriesSection />
       {/* <Footer /> */}
     </>
   );

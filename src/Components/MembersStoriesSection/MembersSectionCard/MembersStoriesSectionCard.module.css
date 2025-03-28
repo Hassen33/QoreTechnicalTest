@@ -1,0 +1,50 @@
+/* =========================== */
+/*     Member Stories Card     */
+/* =========================== */
+
+/* Content */
+.memberStoriesCardContent {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+  max-width: 488px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.textContainer {
+  flex: 1;
+  width: 95%;
+}
+.contentTitle {
+  font-size: 32px;
+  font-family: "Gluten";
+  font-weight: 600;
+}
+p.memberStoriesCardDescription {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  padding: 16px 0px;
+}
+
+.memberStoriesCardButton {
+  background-color: var(--secondary-Button-bg-color);
+  color: var(--secondary-button-text-color);
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* =========================== */
+/*        Responsive CSS       */
+/* =========================== */
+@media (max-width: 1024px) {
+  .memberStoriesCardContent {
+    display: none;
+  }
+}

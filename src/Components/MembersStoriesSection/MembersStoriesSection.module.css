@@ -1,3 +1,36 @@
-.memberStoriesSectionContainer{
-    border: 2px solid darkblue;
+/* ========================== */
+/*  Featured Options Section  */
+/* ========================== */
+.memberStoriesSectionContainer {
+  background-color: var(--main-background-color);
+  padding: 80px 0px;
+  width: 100%;
+  overflow: hidden;
+}
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+
+}
+h2.memberStoriesTitle {
+  font-size: 48px;
+  font-weight: 500px;
+  margin-bottom: 24px;
+}
+
+/* =========================== */
+/*        Responsive CSS       */
+/* =========================== */
+@media (max-width: 1024px) {
+  h2.memberStoriesTitle {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+  .memberStoriesSectionContainer {
+    background-color: var(--secondary-background-color);
+    padding: 40px 0px 24px 0px;
+    width: 100%;
+    overflow: hidden;
+  }
 }
