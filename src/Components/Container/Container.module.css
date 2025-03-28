@@ -1,0 +1,13 @@
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+/* For screens smaller than 1024px (tablets & mobile) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}

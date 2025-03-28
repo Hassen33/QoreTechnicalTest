@@ -1,3 +1,17 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  border: 2px solid red;
+}
+
 .heroContainer {
   border: 2px solid cadetblue;
+}
+
+/* ======= */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
 }
